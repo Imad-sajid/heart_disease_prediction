@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Page with Form</title>
+    <style>
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-field input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Simple Page</h1>
+    <p>This is a paragraph of text on my simple webpage.</p>
+
+    <h2>Contact Us</h2>
+    <form action="{{ url_for('predict')}}" method="post">
+        <div class="form-field">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" placeholder="0-100" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="sex">Sex:</label>
+            <input type="text" id="sex" name="sex" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="cp">Chest Pain Type (cp):</label>
+            <input type="text" id="cp" name="cp" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="trestbps">Resting Blood Pressure (trestbps):</label>
+            <input type="text" id="trestbps" name="trestbps" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="chol">Cholesterol (chol):</label>
+            <input type="text" id="chol" name="chol" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="fbs">Fasting Blood Sugar > 120 mg/dl (fbs):</label>
+            <input type="text" id="fbs" name="fbs" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="restecg">Resting ECG Results (restecg):</label>
+            <input type="text" id="restecg" name="restecg" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="thalach">Maximum Heart Rate Achieved (thalach):</label>
+            <input type="text" id="thalach" name="thalach" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="exang">Exercise Induced Angina (exang):</label>
+            <input type="text" id="exang" name="exang" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="oldpeak">Oldpeak:</label>
+            <input type="text" id="oldpeak" name="oldpeak" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="slope">Slope:</label>
+            <input type="text" id="slope" name="slope" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="ca">Number of Major Vessels (ca):</label>
+            <input type="text" id="ca" name="ca" required="required" />
+        </div>
+        
+        <div class="form-field">
+            <label for="thal">Thal:</label>
+            <input type="text" id="thal" name="thal" required="required" />
+        </div>
+        
+        <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Predict </button>
+                            </div>
+    </form>
+
+<div class="card-footer text-muted">
+                    <h5><b>Result>>: {{prediction_result}}</b></h5>
+                  </div>
+</body>
+</html>
