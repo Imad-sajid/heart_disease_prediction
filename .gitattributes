@@ -1,0 +1,13 @@
+# Treat all .py files as Python
+*.py linguist-language=Python
+
+# Exclude common non-code files from language stats
+*.md linguist-documentation
+*.yml linguist-vendored
+*.json linguist-vendored
+*.lock linguist-vendored
+
+# If you have any frontend files
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
+*.html linguist-language=HTML
