@@ -41,11 +41,11 @@ To run this project locally, follow these steps:
 
 
 ## Files
-**'heartdisease.ipynb':** Data exploration and preprocessing.
-**'heart_diseas_model_trained.ipynb':** Model training and evaluation.
-**'app.py':** Flask web application for making predictions.
-**'finalized_model.pkl':** Trained machine learning model.
-**'templates/':** HTML templates for the web application.
+- **'heartdisease.ipynb':** Data exploration and preprocessing.
+- **'heart_diseas_model_trained.ipynb':** Model training and evaluation.
+- **'app.py':** Flask web application for making predictions.
+- **'finalized_model.pkl':** Trained machine learning model.
+- **'templates/':** HTML templates for the web application.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows best practices and includes necessary tests.
